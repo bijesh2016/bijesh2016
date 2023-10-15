@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <img src="logo.png">
+            <li> <a href="home.html"> Home </a></li>
+            <li> <a href="about.html"> About</a></li>
+            <li> <a href="blogs.html"> Blogs</a></li>
+            <li> <a href="#"> Contact </a></li>
+            </ul>
+    </div>
+<h3>You can contact us by filling this form</h3>
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name"  class="fcf-form-control">
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Email"  class="fcf-form-control">
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button  onclick="bjsaashish()" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" >Send Message</button>
+        </div>
+
+           </form>
+    </div>
+
+</div>
+</body>
+<script>
+     function bjsaashish(){
+         var name=document.getElementById('Name').value;
+         var email= document.getElementById('Email').value;
+         var pattern_name=/^[A-Za-z ]+$/;
+         var pattern_email = /^[a-z]\w+@\w+\.\w+/i;
+         if (name===""||email==="") {
+            alert("𝙉𝙖𝙢𝙚 𝙖𝙣𝙙 𝙀𝙢𝙖𝙞𝙡 𝙖𝙧𝙚  𝙍𝙚𝙦𝙪𝙞𝙧𝙚𝙙");
+         }
+          else if(!name.match(pattern_name)){
+            alert("𝑵𝒂𝒎𝒆 𝒎𝒖𝒔𝒕 𝒃𝒆 𝒊𝒏 𝒂𝒍𝒑𝒉𝒂𝒃𝒆𝒕 𝒍𝒆𝒕𝒕𝒆𝒓𝒔");
+         }
+         else if(name.length<6){
+            alert("𝑵𝒂𝒎𝒆'𝒔 𝒄𝒉𝒂𝒓𝒂𝒄𝒕𝒆𝒓 𝒔𝒉𝒐𝒖𝒍d𝒏𝒐𝒕 𝒃𝒆 𝒍𝒆𝒔𝒔 𝒕𝒉𝒂𝒏 6");
+         }
+         else if(!email.match(pattern_email)){
+            alert("𝑬𝒎𝒂𝒊𝒍 𝒎𝒖𝒔𝒕 𝒃𝒆 𝒗𝒂𝒍𝒊𝒅");
+         }
+         else{
+            alert("𝑺𝒖𝒃𝒎𝒊𝒕𝒕𝒆𝒅 𝑺𝒖𝒄𝒄𝒆𝒔𝒔𝒇𝒖𝒍𝒍𝒚")
+         }
+
+     }
+
+
+</script>
+</html>
