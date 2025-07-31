@@ -1,4 +1,4 @@
-# 👋 Hi there, I'm Bijesh Sharma
+# 👋 Hi there, I'm Bijesh Raj Sharma
 
 I'm a full-stack developer passionate about crafting scalable, user-centric web applications. I specialize in the **MERN Stack (MongoDB, Express.js, React.js, Node.js)** and have foundational experience with **Django** for building clean, maintainable backend systems.
 
